@@ -1,5 +1,5 @@
 ---
-title: Lesson 1- Functions
+title: Functions
 layout: default
 ---
 
@@ -197,6 +197,7 @@ max = g
 max(f(2, g(h(1, 5), 3)), 4)
 ```
 
+
 <details>
     <summary>Click for Solution</summary>
   
@@ -214,8 +215,22 @@ max(f(2, g(h(1, 5), 3)), 4)
     # Evaluates to:
     3
     ```
-    
+
 </details>
+
+
+
+# A collapsible section with markdown
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
+
 
 
 ## Spot the Bug
