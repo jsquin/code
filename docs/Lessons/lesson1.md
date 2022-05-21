@@ -218,24 +218,17 @@ max(f(2, g(h(1, 5), 3)), 4)
 
 </details>
 
+<details><summary>CLICK ME</summary>
+<p>
 
-<details class="details-example">
-    <summary>Click for Solution</summary>
-    <code>
-        # Final State: 
-        max = min()
-        f = max() 
-        g = min()
-        h = max()
+#### yes, even hidden code blocks!
 
-        # Expression
-        min(max(2, min(max(1, 5), 3)), 4)
-        
-        # Evaluates to:
-        3
-    </code>
+```python
+print("hello world!")
+```
+
+</p>
 </details>
-
 
 ## Spot the Bug
 
