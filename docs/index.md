@@ -1,5 +1,5 @@
 ---
-title: My page
+title: Lessons
 layout: default
 ---
 
@@ -7,6 +7,8 @@ layout: default
 
 Content is written in [Markdown](https://learnxinyminutes.com/docs/markdown/).
 Plain text format allows you to focus on your **content**.
+
+# {{ "Practice"}}
 
 <!--
 You can use HTML elements in Markdown, such as the comment element, and they won't
