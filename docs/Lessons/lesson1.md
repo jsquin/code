@@ -225,6 +225,21 @@ max(f(2, g(h(1, 5), 3)), 4)
 <p>Now I am testing text</p>
 <code>def hello(): </code>
 
+<div class="language-plaintext highlighter-rouge">
+    <div class="highlight">
+        <pre class="highlight">
+            <code>
+                f = min 
+                f = max 
+                g = min 
+                h = max 
+                max = g 
+                max(f(2, g(h(1, 5), 3)), 4)
+            </code>
+        </pre>
+    </div>
+</div>
+
 
 </details>
 
