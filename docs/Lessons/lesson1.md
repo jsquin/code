@@ -197,40 +197,20 @@ max = g
 max(f(2, g(h(1, 5), 3)), 4)
 ```
 
+    ! ### Solution
+    ! ```python
+    ! # Final State: 
+    ! max = min()
+    ! f = max() 
+    ! g = min()
+    ! h = max()
 
-<details>
-    <summary>Click for Solution</summary>
-  
-    ### Solution
-    ```python
-    # Final State: 
-    max = min()
-    f = max() 
-    g = min()
-    h = max()
-
-    # Expression
-    min(max(2, min(max(1, 5), 3)), 4)
+    ! # Expression
+    ! min(max(2, min(max(1, 5), 3)), 4)
     
-    # Evaluates to:
-    3
-    ```
-
-</details>
-
-
-
-# A collapsible section with markdown
-<details>
-  <summary>Click to expand!</summary>
-  
-  ## Heading
-  1. A numbered
-  2. list
-     * With some
-     * Sub bullets
-</details>
-
+    ! # Evaluates to:
+    ! 3
+    ! ```
 
 
 
