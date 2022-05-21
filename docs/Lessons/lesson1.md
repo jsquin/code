@@ -3,14 +3,6 @@ title: Lesson1
 layout: default
 ---
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-<script type="text/javascript"
-  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</script>
-
 # {{"Lesson 1: Functions"}}
 
 ## Values
@@ -58,11 +50,9 @@ The notebook will evaluate these expressions and print the value
 
 ## Call Expressions
 Expressions can also use function calls\
-```pow(2, 100)``` == 2 ** 100 == $2^{100}$\
-\(2^{100}\)
-<p> \(2^{100}\) </p>
-```max(50, 300)```\
-```min(-1, 30)```
+* ```pow(2, 100)```\
+* ```max(50, 300)```\
+* ```min(-1, 30)```
 
 
 How does python evaluate these call expressions?
@@ -76,10 +66,33 @@ How does python evaluate these call expressions?
 1. Evaluate the Operator
 2. Evaluate the Operands
 3. Apply the Operator (a function) to the evaluated operands (arguments)
+Operators and Operands are also expressions so they need to be evaluated to get their values.
 
+
+## Names
+
+Names can be bound to values through the **assignment statement**
+
+
+|x|=|7|
+|:---:|:---:|:---:|
+|name|assigment|value|
+
+
+where the value can be any expression\
+```x = 1 + 3 - mul(3,add(12 ** 2, 2))```
 
 
 # {{ "Practice"}}
+
+
+
+## Nested Expressions
+
+How would we evaluate ```add(add(6, mul(4, 6)), mul(3, 5))```?
+
+
+
 
 <!--
 You can use HTML elements in Markdown, such as the comment element, and they won't
