@@ -11,12 +11,13 @@ Fundamentally, a program is just a set of computer instructions that tells it ho
 But what is a value?\
 
 
-A value is information that a computer stores as a certain **data type**
-| Col1         | Col2     | Col3          |
-| :----------- | :------: | ------------: |
-| Left-aligned | Centered | Right-aligned |
-| blah         | blah     | blah          |
-
+A value is information that a computer stores as a certain **data type**\
+| **Data Type** | **Example** |
+| :------------ | ----------: | 
+| Integers | 2 3 753 | 
+| Floats | 3.1415926 2.7182182 | 
+| Booleans | True |
+| Strings | 'hello world!' 'john'|
 
 
 
