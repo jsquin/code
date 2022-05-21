@@ -47,9 +47,15 @@ The notebook will evaluate these expressions and print the value
 >
 </iframe>
 
+
 ## Call Expressions
 Expressions can also use function calls\
 ```pow(2, 100)``` == 2 ** 100 == $2^{100}$
+```max(50, 300)```
+```min(-1, 30)```
+
+
+    
 
 # {{ "Practice"}}
 
