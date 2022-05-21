@@ -221,8 +221,9 @@ max(f(2, g(h(1, 5), 3)), 4)
 
 <details><summary>Click to expand</summary>
 
-## Amazing Info
-It would be great if a hyperlink could directly show this title.
+<h1>Testing titles</h1>
+<p>Now I am testing text</p>
+
 
 </details>
 
