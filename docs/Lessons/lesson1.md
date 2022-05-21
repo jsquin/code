@@ -197,6 +197,24 @@ max = g
 max(f(2, g(h(1, 5), 3)), 4)
 ```
 
+<details>
+    <summary>Click for Solution</summary>
+  
+    ```python
+    # Final State: 
+    max = min()
+    f = max() 
+    g = min()
+    h = max()
+
+    # Expression
+    min(max(2, min(max(1, 5), 3)), 4)
+    
+    # Evaluates to:
+    3
+    ```
+</details>
+
 ## Spot the Bug
 
 
