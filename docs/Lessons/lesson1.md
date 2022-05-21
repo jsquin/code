@@ -86,7 +86,7 @@ where the value can be any expression\
 ### Using Names
 
 A name can be referenced as many times as you need
-```
+```python
 x = 10
 y = 5
 
@@ -134,7 +134,7 @@ TODO
 ## Functions
 A function is a sequence of code that performs a specific task that can easily be reused.\
 We've used functions already\
-```
+```python
 add(5, 3)
 mul(10, 12)
 ```
@@ -143,17 +143,17 @@ mul(10, 12)
 ### Defining Functions
 
 The most common way to create functions is using the ```def``` statement.
-```
+```python
 def <name>(<parameters>):
     return <expression>
 ```
 For example:
-```
+```python
 def add(num1, num2):
     return num1 + num2 
 ```
 and after we define it, it can be used:
-```
+```python
 add(2, 2)
 add(3, 4)
 ```
