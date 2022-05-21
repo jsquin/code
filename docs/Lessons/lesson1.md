@@ -199,9 +199,9 @@ max(f(2, g(h(1, 5), 3)), 4)
 
 <details><summary>Click for Solution</summary>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-3
-</code></pre></div></div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code>3</code>
+</pre></div></div>
 
 </details>
 
