@@ -218,7 +218,7 @@ max(f(2, g(h(1, 5), 3)), 4)
 
 </details>
 
-<details><summary>CLICK ME</summary>
+<details><summary>CLICK ME</summary>\
 <p>
 
 #### yes, even hidden code blocks!
