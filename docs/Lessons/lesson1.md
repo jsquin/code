@@ -59,7 +59,7 @@ How does python evaluate these call expressions?
 
 
 | add | ( | 18 | , | 42 | ) |
-|-----|---|----|---|----|---|
+|:---:|:---:|:---:|:---:|:---:|:---:|
 |Operator| |Operand| |Operand| |
 
 
@@ -83,6 +83,43 @@ where the value can be any expression\
 ```x = 1 + 3 - mul(3,add(12 ** 2, 2))```
 
 
+### Using Names
+
+A name can be referenced as many times as you need\
+```
+x = 10
+y = 5
+
+answer = x * x + x - y / (y + x)
+```
+
+
+Note that a name can only have one value at a time.\
+A name that's bound to a data value is also called a variable
+
+### Name Re-Binding
+
+Unlike most languages, python is a language with dynamic typing, binding, and rebinding.
+That is, if you previously assigned ```a = 30```, then a is bound to an integer with the value 30.\
+If you then run ```a = "hello"```, a will simply be bound to a string with the value "hello".
+
+
+This is different from other common languages like Java, C, or C++. 
+
+
+First: In other languages, running: 
+```a = 30``` will throw an error because they're statically typed. Meaning you have to declare the data type of 
+the variable, whereas python assumes it from the value you're binding the variable to.\
+Python: ```a = True```. Assumes a is a boolean variable\
+Java: ```Bool a = true;```. Needs to be told that a is a boolean variable\
+
+
+Second: Reassigning ```a = False;``` would be fine, since a is still a boolean. However attempting to run: ```a = 30;``` would
+cause an error in Java because it cannot assign an Integer to a boolean variable.
+
+
+
+
 # {{ "Practice"}}
 
 
@@ -90,6 +127,32 @@ where the value can be any expression\
 ## Nested Expressions
 
 How would we evaluate ```add(add(6, mul(4, 6)), mul(3, 5))```?
+
+## Name Rebinding
+
+What is the final value after this sequence of code?\
+```
+f = min 
+f = max 
+g = min 
+h = max 
+max = g 
+max(f(2, g(h(1, 5), 3)), 4)
+```
+
+## Environment Diagrams
+TODO 
+
+## Functions
+A function is a sequence of code that performs a specific task that can easily be reused.\
+We've used functions already\
+```
+add(5, 3)
+mul(10, 12)
+```
+
+
+### Defining Functions
 
 
 
