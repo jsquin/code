@@ -5,7 +5,14 @@ layout: default
 
 # {{"Lesson 0: Python Basics"}}
 
-Try out some code!
+# {"What is Python?"}
+
+Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.
+These words might not mean much right now, but hopefully it will make sense as you progress through these lessons.
+\
+\
+# {"What is Coding"}
+Coding is stuff
 <iframe
   src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1"
   width="100%"
