@@ -28,6 +28,18 @@ Expression: ```'hello' + ' ' + 'world!'```
 Value: ```'hello world!'```
 
 
+An expression can contain operators (e.g.:```*```, ```+```, ...)\
+```32 + 15```
+```355/113```
+```2 * 100```
+```2 ** 100```
+
+
+Try these out in the Notebook below!\
+Type an expression into the bottom box then press ```shift``` + ```enter```\
+The notebook will evaluate these expressions and print the value
+
+
 <iframe
   src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1"
   width="100%"
