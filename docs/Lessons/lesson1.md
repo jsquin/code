@@ -200,6 +200,7 @@ max(f(2, g(h(1, 5), 3)), 4)
 <details>
     <summary>Click for Solution</summary>
   
+    ### Solution
     ```python
     # Final State: 
     max = min()
@@ -214,6 +215,7 @@ max(f(2, g(h(1, 5), 3)), 4)
     3
     ```
 </details>
+
 
 ## Spot the Bug
 

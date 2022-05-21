@@ -22,11 +22,15 @@ layout: default
 
 
 
+
 # {{ "Practice"}}
 
 Testing!
 <!--
-You can use HTML elements in Markdown, such as the comment element, and they won't
-be affected by a markdown parser. However, if you create an HTML element in your
-markdown file, you cannot use markdown syntax within that element's contents.
+Practical Project Ideas:
+
+* Create a python game (I probably have to create the structure)
+* Create a python app (like the mileage calculator)
+* Create a discord bot (like brawl bot)
+* Steal from 61A projects.
 -->
