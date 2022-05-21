@@ -7,7 +7,7 @@ layout: default
 
 [Lesson 0: Python](/Lessons/lesson0.md)
 [Lesson 1: Functions](/Lessons/lesson1.md)
-This is not appearing
+This is not appearing. Still.
 
 # {{ "Practice"}}
 
