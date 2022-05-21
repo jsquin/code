@@ -50,12 +50,20 @@ The notebook will evaluate these expressions and print the value
 
 ## Call Expressions
 Expressions can also use function calls\
-```pow(2, 100)``` == 2 ** 100 == $2^{100}$
-```max(50, 300)```
+```pow(2, 100)``` == 2 ** 100 == $2^{100}$\
+```max(50, 300)```\
 ```min(-1, 30)```
 
 
-    
+How does python evaluate these call expressions?\
+| add | ( | 18 | , | 42 | ) |
+|-----|---|----|---|----|---|
+|Operator| |Operand| |Operand| |
+1. Evaluate the Operator
+2. Evaluate the Operands
+3. Apply the Operator (a function) to the evaluated operands (arguments)
+
+
 
 # {{ "Practice"}}
 
