@@ -1,5 +1,5 @@
 ---
-title: Lesson 1: Functions
+title: Lesson 1- Functions
 layout: default
 ---
 
