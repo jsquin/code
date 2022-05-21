@@ -33,4 +33,6 @@ Practical Project Ideas:
 * Create a python app (like the mileage calculator)
 * Create a discord bot (like brawl bot)
 * Steal from 61A projects.
+
+Maybe gitlet?
 -->

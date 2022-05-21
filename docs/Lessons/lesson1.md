@@ -160,6 +160,48 @@ add(3, 4)
 
 ### Anatomy of Function Definitions
 
+The first line is called the **function signature**, all lines after are the **function body**
+```python
+def <name>(parameters): # <-- Function signature
+    return <expression> # <-- Function body
+```
+```python
+def add(num1, num2):    # <-- Function signature
+    return num1 + num2  # <-- Function body
+```
+The function body can have multiple lines
+```python
+def add2(num1, num2):   # <-- Function signature
+    sum = num1 + num2   # <-- Function body
+    return sum          # <-- Function body
+```
+
+
+Expressions can be passed in as function arguments.
+```python
+x, y = 1, 2
+add(x, y)
+```
+```python
+x = 3
+add(x * x, x - x ** x)
+```
+
+
+The ```return``` keyword returns a value to whoever called the function.
+```python
+sum = add(3, 5) - 12
+```
+is the same as:
+```python
+sum = 8 - 12
+```
+Reminder: you can use multiple function calls in expressions AND nest function calls.
+```python
+sum = add(1,2) + add(3,4)
+sum2 = add(add(3,3), add(1,5)) + add(3,2)
+```
+
 
 ### Functions in Environment Diagrams
 
