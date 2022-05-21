@@ -197,64 +197,22 @@ max = g
 max(f(2, g(h(1, 5), 3)), 4)
 ```
 
+<details><summary>Click for Solution</summary>
 
-<details>
-    <summary>Click for Solution</summary>
-  
-    ### Solution
-    ```python
-    # Final State: 
-    max = min()
-    f = max() 
-    g = min()
-    h = max()
-
-    # Expression
-    min(max(2, min(max(1, 5), 3)), 4)
-    
-    # Evaluates to:
-    3
-    ```
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+# In the end:
+f = max()
+g = min()
+h = max()
+max = min()
+# The final expression:
+min(max(2, min(max(1, 5), 3)), 4)
+# Results in the value:
+3
+</code></pre></div></div>
 
 </details>
 
-
-<details><summary>Click to expand</summary>
-
-<h1>Testing titles</h1>
-<p>Now I am testing text</p>
-<code>def hello(): </code>
-
-<div class="language-plaintext highlighter-rouge">
-    <div class="highlight">
-        <pre class="highlight">
-            <code>
-                f = min 
-                f = max 
-                g = min 
-                h = max 
-                max = g 
-                max(f(2, g(h(1, 5), 3)), 4)
-            </code>
-        </pre>
-    </div>
-</div>
-
-
-</details>
-
-
-<details><summary>CLICK ME</summary><br>
-<p>
-
-#### yes, even hidden code blocks!
-
-```python
-print("hello world!")
-```
-
-</p>
-</details>
 
 ## Spot the Bug
 
