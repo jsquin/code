@@ -21,7 +21,11 @@ A value is information that a computer stores as a certain **data type**
 | Booleans       | ```True``` ```False```           |
 | Strings        | ```"Hello World"``` ```'John'``` |
 
+## Expressions
 
+An expression is something that evaluates to values.\
+Expression: ```'hello' + ' ' + 'world!'```
+Value: ```'hello world!'```
 
 
 <iframe
