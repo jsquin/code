@@ -49,9 +49,9 @@ The notebook will evaluate these expressions and print the value
 
 
 ## Call Expressions
-Expressions can also use function calls\
-* ```pow(2, 100)```\
-* ```max(50, 300)```\
+Expressions can also use function calls
+* ```pow(2, 100)```
+* ```max(50, 300)```
 * ```min(-1, 30)```
 
 
@@ -85,7 +85,7 @@ where the value can be any expression\
 
 ### Using Names
 
-A name can be referenced as many times as you need\
+A name can be referenced as many times as you need
 ```
 x = 10
 y = 5
@@ -101,7 +101,7 @@ A name that's bound to a data value is also called a variable
 
 Unlike most languages, python is a language with dynamic typing, binding, and rebinding.
 That is, if you previously assigned ```a = 30```, then a is bound to an integer with the value 30.\
-If you then run ```a = "hello"```, a will simply be bound to a string with the value "hello".
+If you then run ```a = "hello"```, a will be bound to a string with the value "hello".
 
 
 This is different from other common languages like Java, C, or C++. 
@@ -111,11 +111,60 @@ First: In other languages, running:
 ```a = 30``` will throw an error because they're statically typed. Meaning you have to declare the data type of 
 the variable, whereas python assumes it from the value you're binding the variable to.\
 Python: ```a = True```. Assumes a is a boolean variable\
-Java: ```Bool a = true;```. Needs to be told that a is a boolean variable\
+Java: ```Bool a = true;```. Needs to be told that a is a boolean variable
 
 
-Second: Reassigning ```a = False;``` would be fine, since a is still a boolean. However attempting to run: ```a = 30;``` would
-cause an error in Java because it cannot assign an Integer to a boolean variable.
+Second: Reassigning ```a = False;``` would be fine in Java, since a is still a boolean. However attempting to run: ```a = 30;``` would
+cause an error because it cannot assign an Integer to a boolean variable.
+
+
+Feel free to explore naming and expressions below.
+
+<iframe
+  src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1"
+  width="100%"
+  height="400px"
+>
+</iframe>
+
+
+## Environment Diagrams
+TODO 
+
+## Functions
+A function is a sequence of code that performs a specific task that can easily be reused.\
+We've used functions already\
+```
+add(5, 3)
+mul(10, 12)
+```
+
+
+### Defining Functions
+
+The most common way to create functions is using the ```def``` statement.
+```
+def <name>(<parameters>):
+    return <expression>
+```
+For example:
+```
+def add(num1, num2):
+    return num1 + num2 
+```
+and after we define it, it can be used:
+```
+add(2, 2)
+add(3, 4)
+```
+
+### Anatomy of Function Definitions
+
+
+
+
+
+
 
 
 
@@ -140,25 +189,7 @@ max = g
 max(f(2, g(h(1, 5), 3)), 4)
 ```
 
-## Environment Diagrams
-TODO 
-
-## Functions
-A function is a sequence of code that performs a specific task that can easily be reused.\
-We've used functions already\
-```
-add(5, 3)
-mul(10, 12)
-```
-
-
-### Defining Functions
 
 
 
 
-<!--
-You can use HTML elements in Markdown, such as the comment element, and they won't
-be affected by a markdown parser. However, if you create an HTML element in your
-markdown file, you cannot use markdown syntax within that element's contents.
--->
