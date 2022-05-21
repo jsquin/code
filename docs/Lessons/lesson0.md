@@ -5,7 +5,14 @@ layout: default
 
 # {{"Lesson 0: Python Basics"}}
 
-Probably want to put stuff here
+Try out some code!
+<iframe
+  src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1"
+  width="100%"
+  height="500px"
+>
+</iframe>
+
 
 # {{ "Practice"}}
 
