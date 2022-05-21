@@ -3,7 +3,7 @@ title: Lesson1
 layout: default
 ---
 
-# {{"Lesson 1: Functions"}
+# {{"Lesson 1: Functions"}}
 
 Probably want to put stuff here
 
