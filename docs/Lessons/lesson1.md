@@ -188,7 +188,7 @@ How would we evaluate ```add(add(6, mul(4, 6)), mul(3, 5))```?
 ## Name Rebinding
 
 What is the final value after this sequence of code?
-```
+```python
 f = min 
 f = max 
 g = min 
@@ -200,14 +200,6 @@ max(f(2, g(h(1, 5), 3)), 4)
 <details><summary>Click for Solution</summary>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-# In the end:
-f = max()
-g = min()
-h = max()
-max = min()
-# The final expression:
-min(max(2, min(max(1, 5), 3)), 4)
-# Results in the value:
 3
 </code></pre></div></div>
 
