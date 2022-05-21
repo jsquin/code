@@ -8,6 +8,7 @@ layout: default
 </script>
 <script type="text/javascript"
   src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </script>
 
 # {{"Lesson 1: Functions"}}
@@ -37,7 +38,7 @@ Value: ```'hello world!'```
 
 An expression can contain operators (e.g.:```*```, ```+```, ...)\
 * ```32 + 15```
-* ```355/113```
+* ```355 / 113```
 * ```2 * 100```
 * ```2 ** 100```
 
@@ -57,12 +58,15 @@ The notebook will evaluate these expressions and print the value
 
 ## Call Expressions
 Expressions can also use function calls\
-```pow(2, 100)``` == 2 ** 100 == $2^{100}$
+```pow(2, 100)``` == 2 ** 100 == $2^{100}$\
+\(2^{100}\)
 ```max(50, 300)```\
 ```min(-1, 30)```
 
 
-How does python evaluate these call expressions?\
+How does python evaluate these call expressions?
+
+
 | add | ( | 18 | , | 42 | ) |
 |-----|---|----|---|----|---|
 |Operator| |Operand| |Operand| |
