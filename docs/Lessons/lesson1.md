@@ -8,16 +8,16 @@ layout: default
 ## Values
 
 Fundamentally, a program is just a set of computer instructions that tells it how to manipulate values.\
-But what is a value?\
+But what is a value?
 
 
 A value is information that a computer stores as a certain **data type**\
-| **Data Type** | **Example** |
-| :------------ | ----------: | 
-| Integers | 2 3 753 | 
-| Floats | 3.1415926 2.7182182 | 
-| Booleans | True |
-| Strings | 'hello world!' 'john'|
+| **Data Types** | **Examples**         |
+|----------------|----------------------|
+| Integers       | 1 2 35139            |
+| Floats         | 3.14159265 2.7182182 |
+| Booleans       | True False           |
+| Strings        | "Hello World" 'John' |
 
 
 
