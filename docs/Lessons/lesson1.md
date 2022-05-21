@@ -218,6 +218,15 @@ max(f(2, g(h(1, 5), 3)), 4)
 
 </details>
 
+
+<details><summary>Click to expand</summary>
+
+## Amazing Info
+It would be great if a hyperlink could directly show this title.
+
+</details>
+
+
 <details><summary>CLICK ME</summary><br>
 <p>
 
