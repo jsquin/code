@@ -60,6 +60,7 @@ The notebook will evaluate these expressions and print the value
 Expressions can also use function calls\
 ```pow(2, 100)``` == 2 ** 100 == $2^{100}$\
 \(2^{100}\)
+<p> \(2^{100}\) </p>
 ```max(50, 300)```\
 ```min(-1, 30)```
 
