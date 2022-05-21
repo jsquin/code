@@ -1,12 +1,11 @@
 ---
-title: Lessons
+title: Lesson1
 layout: default
 ---
 
-# {{ page.title }}
+# {{"Lesson 1: Functions"}
 
-[Lesson 0: Python](/Lessons/lesson0.md)
-[Lesson 1: Functions](/Lessons/lesson1.md)
+Probably want to put stuff here
 
 # {{ "Practice"}}
 
