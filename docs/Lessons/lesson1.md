@@ -16,10 +16,10 @@ A value is information that a computer stores as a certain **data type**
 
 | **Data Types** | **Examples**         |
 |----------------|----------------------|
-| Integers       | 1 2 35139            |
-| Floats         | 3.14159265 2.7182182 |
-| Booleans       | True False           |
-| Strings        | "Hello World" 'John' |
+| Integers       | ```1``` ```2``` ```35139``` |
+| Floats         | ```3.14159265``` ```2.7182182``` |
+| Booleans       | ```True``` ```False```           |
+| Strings        | ```"Hello World"``` ```'John'``` |
 
 
 
