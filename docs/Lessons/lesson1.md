@@ -161,6 +161,14 @@ add(3, 4)
 ### Anatomy of Function Definitions
 
 
+### Functions in Environment Diagrams
+
+
+## Revisiting Names
+
+### Name lookup rules
+
+
 
 
 
@@ -189,7 +197,9 @@ max = g
 max(f(2, g(h(1, 5), 3)), 4)
 ```
 
+## Spot the Bug
 
 
+## Name Lookup 
 
 
