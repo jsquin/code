@@ -71,6 +71,8 @@ How does python evaluate these call expressions?
 | add | ( | 18 | , | 42 | ) |
 |-----|---|----|---|----|---|
 |Operator| |Operand| |Operand| |
+
+
 1. Evaluate the Operator
 2. Evaluate the Operands
 3. Apply the Operator (a function) to the evaluated operands (arguments)
