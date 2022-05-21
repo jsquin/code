@@ -11,7 +11,9 @@ Fundamentally, a program is just a set of computer instructions that tells it ho
 But what is a value?
 
 
-A value is information that a computer stores as a certain **data type**\
+A value is information that a computer stores as a certain **data type**
+
+
 | **Data Types** | **Examples**         |
 |----------------|----------------------|
 | Integers       | 1 2 35139            |
