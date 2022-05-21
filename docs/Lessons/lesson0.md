@@ -5,13 +5,17 @@ layout: default
 
 # {{"Lesson 0: Python Basics"}}
 
-# {"What is Python?"}
+## What is Python?
 
 Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.
 These words might not mean much right now, but hopefully it will make sense as you progress through these lessons.
-\
-\
-# {"What is Coding"}
+
+## Values
+
+Fundamentally, a program is just a set of computer instructions that tells it how to mess around with values.
+
+
+
 Coding is stuff
 <iframe
   src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1"
