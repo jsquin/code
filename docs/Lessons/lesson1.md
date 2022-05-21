@@ -187,7 +187,7 @@ How would we evaluate ```add(add(6, mul(4, 6)), mul(3, 5))```?
 
 ## Name Rebinding
 
-What is the final value after this sequence of code?\
+What is the final value after this sequence of code?
 ```
 f = min 
 f = max 
@@ -230,6 +230,7 @@ max(f(2, g(h(1, 5), 3)), 4)
      * With some
      * Sub bullets
 </details>
+
 
 
 
