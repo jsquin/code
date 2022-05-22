@@ -5,6 +5,7 @@ layout: default
 
 # {{ page.title }}
 
+[Lesson 0: Python Basics](/Lessons/lesson0.md)\
 [Lesson 1: Functions](/Lessons/lesson1.md)\
 [Lesson 2: Control](/Lessons/lesson2.md)\
 [Lesson 3: Higher Order Functions](/Lessons/lesson3.md)\

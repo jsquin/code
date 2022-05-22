@@ -5,6 +5,8 @@ layout: default
 
 # {{"Lesson 0: Python Basics"}}
 
+Note: Not everything here will make sense immediately. This is meant to be a refresher / supplement on python as you progress through the lessons.
+
 ## What is Python?
 
 Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.
