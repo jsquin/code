@@ -23,9 +23,11 @@ layout: default
 
 
 
-# {{ "Practice"}}
+# {{ "Homework"}}
 
-Testing!
+<a href="../homework/hw1/hw1.py" download = "download">Homework 1</a>
+<a href="../homework/hw1/hw1-autograder.py" download = "download">Homework 1 autograder</a>
+
 <!--
 Practical Project Ideas:
 

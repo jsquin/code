@@ -65,7 +65,7 @@ How does python evaluate these call expressions?
 
 1. Evaluate the Operator
 2. Evaluate the Operands
-3. Apply the Operator (a function) to the evaluated operands (arguments)
+3. Apply the Operator (a function) to the evaluated operands (arguments)\
 Operators and Operands are also expressions so they need to be evaluated to get their values.
 
 
@@ -133,7 +133,7 @@ TODO
 
 ## Functions
 A function is a sequence of code that performs a specific task that can easily be reused.\
-We've used functions already\
+We've used functions already
 ```python
 add(5, 3)
 mul(10, 12)
@@ -245,8 +245,7 @@ max(f(2, g(h(1, 5), 3)), 4)
 <code>3</code>
 </pre></div></div>
 
-</details>
-
+</details>\ 
 
 ## Spot the Bug
 
