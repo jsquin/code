@@ -25,7 +25,7 @@ layout: default
 
 # {{ "Homework"}}
 
-<a href="homework/hw1" download>Homework 1</a>
+<a href="homework/hw1/hw1.zip" download>Homework 1</a>
 <a href="homework/hw1/hw1-autograder.py" download>Homework 1 autograder</a>\
 <a href="homework/hw2/hw2.py" download>Homework 2</a>
 <a href="homework/hw2/hw2-autograder.py" download>Homework 2 autograder</a>\
