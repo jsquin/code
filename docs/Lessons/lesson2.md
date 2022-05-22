@@ -58,10 +58,7 @@ print(print(1), print(2))
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight">
 <code>1
 2
-None None</code>
-
-</pre></div></div>
-
+None None</code></pre></div></div>
 
 <details><summary>Click for Explanation</summary>
 
@@ -76,7 +73,7 @@ Finally it runs the first print() function, which has the arguments None and Non
 
 </details>
 
-## More Function Features
+<!--Needs more/better explanation-->
 
 Try running it here
 <iframe
@@ -86,4 +83,40 @@ Try running it here
 >
 </iframe>
 
+
+## More Function Features
+
+In the function signature, a parameter can specify a **default value**. If the parameter isn't passed in, the default value is used instead.\
+Default values can be overridden by specifying the parameter name or just placing a value where the default value is.
+
+```python
+def multiply_by(num, multiplier = 10):
+    return num * multiplier 
+
+multiply_by(3)
+>>> 30
+# Overriding default values
+multiply_by(3, 10)
+>>> 30 
+multiply_by(3, multiplier = 10)
+>>> 30 
+```
+
+## Mutliple return values
+
+A function can specify more than one return value, separated by commas.
+
+```python
+def divide_exact(n, d):
+    quotient = n // d
+    remainder = n % d 
+    return quotient, remainder
+```
+Any code that uses a function with more than one return value must also unpack the return values
+
+```python
+p, q = divide_exact(618, 10)
+```
+
+## Booleans
 
