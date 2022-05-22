@@ -73,19 +73,6 @@ Finally it runs the first print() function, which has the arguments None and Non
 
 ## More Function Features
 
-
-
-## Printing
-
-Printing is how you can see what the computer is "thinking" at any point in time. Say you have a variable that you manipulate many times. You can use print statements to make sure the code is doing what you want it to do.
-
-```python
-a, b = 1, 1
-while b < 1000:
-  a, b = b, a + b 
-  print(a) # What do you think this code does?
-```
-
 Try running it here
 <iframe
   src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1"
@@ -93,11 +80,5 @@ Try running it here
   height="500px"
 >
 </iframe>
-
-<details><summary>Click for Solution</summary>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight">
-<code>It generates the Fibbonacci numbers less than 1000.</code>
-</pre></div></div></details>
 
 
