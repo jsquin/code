@@ -10,13 +10,18 @@ layout: default
 Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.
 These words might not mean much right now, but hopefully it will make sense as you progress through these lessons.
 
-## Values
+## Printing
 
-Fundamentally, a program is just a set of computer instructions that tells it how to mess around with values.
+Printing is how you can see what the computer is "thinking" at any point in time. Say you have a variable that you manipulate many times. You can use print statements to make sure the code is doing what you want it to do.
 
+```python
+a, b = 1, 1
+while b < 1000:
+  a, b = b, a + b 
+  print(b) # What do you think this code does?
+```
 
-
-Coding is stuff
+Try running it here
 <iframe
   src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1"
   width="100%"
@@ -24,6 +29,11 @@ Coding is stuff
 >
 </iframe>
 
+<details><summary>Click for Solution</summary>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code>It generates the Fibbonacci numbers less than 1000.</code>
+</pre></div></div>
 
 # {{ "Practice"}}
 
