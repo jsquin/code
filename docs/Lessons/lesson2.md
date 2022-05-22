@@ -59,6 +59,10 @@ print(print(1), print(2))
 <code>1
 2
 None None</code>
+
+</pre></div></div>
+
+
 <details><summary>Click for Explanation</summary>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight">
@@ -69,7 +73,8 @@ It then runs print(1), which prints out 1 into the console, then returns None.
 It repeats this process for print(2).
 Finally it runs the first print() function, which has the arguments None and None.</code>
 </pre></div></div></details>
-</pre></div></div></details>
+
+</details>
 
 ## More Function Features
 

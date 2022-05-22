@@ -13,6 +13,13 @@
 
 # Part 3:
 #   Wordle Class Methods
+#   Maybe implement a wordle helper?
+#   It deletes letters and stuff?
+#   Maybe implement a wordle solver / helper
+#   Generate a list of possible words given the information.
+
+
+#New plan: Wordle Game and Wordle Solver
 
 # Part 4:
 #   Keep record of score 
