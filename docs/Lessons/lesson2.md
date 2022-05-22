@@ -42,11 +42,6 @@ def square2(x):
     print(x * x)
 ```
 
-
-## Pure vs Not Pure Functions
-
-Pure functions _only_ return a value, whereas not sure functions have a side effect (like printing a value)
-
 ## Nested Print Statements
 
 What will this display? (Hint: Recall how functions are evaluated)
@@ -119,4 +114,40 @@ p, q = divide_exact(618, 10)
 ```
 
 ## Booleans
+
+A boolean is either ```True``` or ```False```
+
+
+Expressions can evaluate to booleans, usually using comparison or logical operators
+```python
+passed_class = grade >= 70
+wear_jacket = is_raining or is_windy or is_snowing
+```
+
+### Comparison Operators
+
+|Operator|Meaning|True Expressions|
+|:---:|:---:|:---:|
+|==|Equality|```32 == 16 + 16``` ```'a' == 'a'```|
+|!=|Inequality|```32 != 16``` ```'a' != 'b'```|
+|>|Greater than|```32 > 16``` ```16 + 1 > 16```|
+|>=|Greater than or equal|```32 >= 16``` ```16 >= 16```|
+|<|Less than|```32 < 64``` ``` 1-3 < 13```|
+|<=|Less than or equal|````23 < 46``` ```13 <= 13```|
+
+### Logical Operators
+
+|Operator|True Expressions|Meaning|
+|:---:|:---:|:---:|
+|```and```|```4 > 0 and 2 < 3```|Evaluates to ```True``` if both conditions are true. ```False``` otherwise.|
+|```or```|```4 > 0 or 2 < -3```|Evaluates to ```True``` if either conditions are true. ```False``` if both are false.|
+|```not```|``` not (5 == 0)```|Evaluates to ```True``` if the condition is false. ```False``` if the condition is true.|
+
+
+### Compound Booleans
+
+When combining multiple operators in an expression, you can use paranthesis to group them together.
+
+``` mobility_issues = (age >= 0 and age <= 2) or age > 90```
+
 
