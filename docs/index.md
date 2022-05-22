@@ -24,9 +24,10 @@ layout: default
 
 
 # {{ "Homework"}}
-<a href="homework/hw1/hw1.zip" download>Homework 1</a>/
+<a href="homework/hw1/hw1.zip" download>Homework 1</a>
 
-<a href="homework/hw2/hw2.zip" download>Homework 2</a>/
+<a href="homework/hw2/hw2.zip" download>Homework 2</a>
+
 <a href="homework/hw3/hw3.zip" download>Homework 3</a>
 
 
