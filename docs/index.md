@@ -7,7 +7,7 @@ layout: default
 
 [Lesson 0: Python Basics](/Lessons/lesson0.md)\
 [Lesson 1: Functions](/Lessons/lesson1.md)\
-[Lesson 2: Control](code/Lessons/lesson2.md)\
+[Lesson 2: Control](/Lessons/lesson2.md)\
 [Lesson 3: Higher Order Functions](/Lessons/lesson3.md)\
 [Lesson 4: Design](/Lessons/lesson4.md)\
 [Lesson 5: More Functions](/Lessons/lesson5.md)\
