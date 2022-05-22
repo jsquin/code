@@ -35,7 +35,7 @@ Try running it here
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight">
 <code>It generates the Fibbonacci numbers less than 1000.</code>
-</pre></div></div>
+</pre></div></div></details>
 
 
 ## Comments
