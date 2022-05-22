@@ -24,8 +24,8 @@ layout: default
 
 
 # {{ "Homework"}}
-
 <a href="homework/hw1/hw1.zip" download>Homework 1</a>/
+
 <a href="homework/hw2/hw2.zip" download>Homework 2</a>/
 <a href="homework/hw3/hw3.zip" download>Homework 3</a>
 
@@ -39,4 +39,6 @@ Practical Project Ideas:
 * Steal from 61A projects.
 
 Maybe gitlet?
+
+Hey. Why are you poking around here. Stop.
 -->
