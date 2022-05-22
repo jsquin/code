@@ -1,3 +1,12 @@
+###########################
+#                         #
+#  Homework 1 Autograder: #
+#  Written by Marcus Lee  #
+#   Course Content from   #
+#    Berkeley's CS61A     #
+#                         #
+###########################
+
 import unittest
 from hw1 import * 
 
