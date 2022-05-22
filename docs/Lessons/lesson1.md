@@ -245,7 +245,7 @@ max(f(2, g(h(1, 5), 3)), 4)
 <code>3</code>
 </pre></div></div>
 
-</details>\ 
+</details><br>
 
 ## Spot the Bug
 
