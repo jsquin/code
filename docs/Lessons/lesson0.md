@@ -9,8 +9,10 @@ Note: Not everything here will make sense immediately. This is meant to be a ref
 
 ## What is Python?
 
-Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.
-These words might not mean much right now, but hopefully it will make sense as you progress through these lessons.
+Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.\
+Python being interpreted means that each line of code is run directly, without converting it into machine code.\
+This is the opposite of languages like Java and C, which are compiled languages. Compiled languages first convert the human-made code into machine code, instructions that the CPU understands.\
+The rest of the terms like object-oriented and dynamic semantics will be explained later throughout the lessons.
 
 ## Printing
 

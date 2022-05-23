@@ -128,12 +128,12 @@ wear_jacket = is_raining or is_windy or is_snowing
 
 |Operator|Meaning|True Expressions|
 |:---:|:---:|:---:|
-|==|Equality|```32 == 16 + 16``` ```'a' == 'a'```|
-|!=|Inequality|```32 != 16``` ```'a' != 'b'```|
-|>|Greater than|```32 > 16``` ```16 + 1 > 16```|
-|>=|Greater than or equal|```32 >= 16``` ```16 >= 16```|
-|<|Less than|```32 < 64``` ``` 1-3 < 13```|
-|<=|Less than or equal|````23 < 46``` ```13 <= 13```|
+|```==```|Equality|```32 == 16 + 16``` ```'a' == 'a'```|
+|```!=```|Inequality|```32 != 16``` ```'a' != 'b'```|
+|```>```|Greater than|```32 > 16``` ```16 + 1 > 16```|
+|```>=```|Greater than or equal|```32 >= 16``` ```16 >= 16```|
+|```<```|Less than|```32 < 64``` ``` 1-3 < 13```|
+|```<=```|Less than or equal|```23 < 46``` ```13 <= 13```|
 
 ### Logical Operators
 
@@ -148,6 +148,173 @@ wear_jacket = is_raining or is_windy or is_snowing
 
 When combining multiple operators in an expression, you can use paranthesis to group them together.
 
-``` mobility_issues = (age >= 0 and age <= 2) or age > 90```
+```python 
+mobility_issues = (age >= 0 and age <= 2) or age > 90
+```
+
+## Statements
+
+A statement is executed by the python interpreter to perform an action.
+
+|**Statement Type**|**Example**|
+|:---:|:---:|
+|Assignment Statement| ```name = "Marcus"```|
+|Def Statement| ```def greet(name): return "hello " + name```|
+|Return Statement| ```return "hello " + name```|
 
 
+### Compound Statements
+
+A compound statement contains groups of other statements
+
+```python
+<header>:            # Clause 
+    <statement>      # Suite
+    <statement>     
+    ...
+<separating header>: # Clause
+    <statement>      # Suite
+    <statement>
+    ...
+```
+
+The first header determines a statement's type and the header of each clause controls the suite that follows.
+
+
+Execution Rule for a series of statements (a suite):
+1. Execute the first statement 
+2. Unless directed otherwise, execute the rest
+
+
+### Conditional Statements
+
+a **conditional statement** executes different code statements based on whether certain conditions are true or false.
+
+```python
+if <condition>:
+    <statement>
+    <statement>
+    ...
+```
+A simple example:
+```python
+clothing = "shirt"
+if temperature < 60:
+    clothing = "jacket"
+```
+
+#### Compound Conditionals
+
+A conditional can include any number of ```elif``` statements to check other conditions
+
+```python
+if <condition>:
+    <statement>
+elif <condition>:
+    <statement>
+elif <condition>:
+    <statement>
+```
+A simple example:
+```python
+clothing = "shirt"
+if temperature < 32:
+    clothing = "parka"
+elif temperature < 60:
+    clothing = "jacket"
+```
+
+#### The ```else``` Statement
+
+A conditional can specify an ```else``` clause for code to run if no condition is true.
+
+```python
+if <condition>:
+    <statement>
+elif <condition>:
+    <statement>
+else:
+    <statement>
+```
+A simple example:
+```python
+if temperature < 32:
+    clothing = "parka"
+elif temperature < 60:
+    clothing = "jacket"
+else:
+    clothing = "shirt"
+```
+
+#### Execution of Conditional Statements
+
+Each clause is considered in order
+
+
+* Evaluate the header's expression
+* If true, execute the suite of statements underneath and skip the remaining clauses
+* Otherwise, continue to the next clause
+
+
+A branch of a conditional can contain a ```return``` which exits the function entirely.
+
+```python
+def get_number_sign(num):
+    if num < 0:
+        return "negative"
+    elif num > 0:
+        return "positive"
+    else:
+        return "neutral"
+```
+
+## While Loops
+
+While loop syntax:
+```
+while <condition>:
+    <statement>
+    <statement>
+```
+As long as the statement is true, the suite below it is executed
+```python
+multiplier = 1
+while multipler <= 5:
+    print(5 * multiplier)
+    multiplier += 1
+```
+Instead of manually writing out 5 print statements, you can use a while loop.\
+The code is significantly shorter and more easily extendable to more or less iterations.
+
+
+### Counter Variables
+
+It's common practice to use counter variables whose job is keeping track of the number of iterations
+
+```python
+total, counter = 0, 0
+while counter < 10:
+    total += pow(2, counter)
+    counter += 1
+```
+
+### Infinite Loops
+
+The most common issue from while loops. 
+
+```python
+counter = 0
+while counter < 10:
+    print("Hello!")
+```
+Do you see how this code would run forever?\
+What single line of code could fix this?
+
+<details><summary>Click for Answer</summary>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code>counter += 1</code>
+</pre></div></div></details>
+
+
+## For Loops

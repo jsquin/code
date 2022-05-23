@@ -26,6 +26,14 @@ layout: default
 
 
 # Homework
+
+Steps:
+1. Download the compressed homework file
+2. Unzip the homework file
+3. Open the homework.py file and complete the assignment
+4. Run hw-autograder.py to check your work.
+
+
 <a href="homework/hw1/hw1.zip" download>Homework 1</a>
 
 <a href="homework/hw2/hw2.zip" download>Homework 2</a>
