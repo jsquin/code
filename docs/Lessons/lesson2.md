@@ -298,6 +298,15 @@ while counter < 10:
     counter += 1
 ```
 
+```python
+def sum_squares(n):
+    # Returns of the sum of squares up to n ^ 2.
+    total, counter = 0, 0
+    while counter <= n:
+        total += pow(counter, 2)
+    return total 
+```
+
 ### Infinite Loops
 
 The most common issue from while loops. 
@@ -317,4 +326,38 @@ What single line of code could fix this?
 </pre></div></div></details>
 
 
+### Execution of Loops
+
+1. Evaluate header's condition
+2. If it is true, execute the suite of conditions then return to step 1.
+
+
+### The ```break``` statement
+
+To prematurely exit a loop, use the ```break``` statement.
+
+```python
+counter = 64
+while counter < 200:
+    if counter % 7 == 0:
+        first_multiple = counter
+        break 
+    counter += 1
+```
+
+### While True
+
+Only for the brave or the foolish, you can loop using ```True``` as your condition:
+
+```python
+counter = 64 
+while True:
+    if counter % 63 == 0:
+        first_multiple = counter 
+        break 
+    counter += 1 
+```
+
+
 ## For Loops
+
