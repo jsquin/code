@@ -117,7 +117,18 @@ The modulo operator is also known as the remainder operator. It returns the rema
 7 % 3 == 1
 ```
 
-Activity: How would you implement the modulo operator without using ```%```?
+Activity: How would you implement the modulo operator without using ```%```?\
+```hint: '//' is the floor div function```
+
+
+
+Try running it here
+<iframe
+  src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1"
+  width="100%"
+  height="500px"
+>
+</iframe>
 
 
 ## Strings

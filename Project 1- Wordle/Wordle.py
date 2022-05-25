@@ -8,6 +8,12 @@
 import os 
 import random
 
+# Part 1: Generate word bank
+# Part 2: Wordle Game
+# Part 3: Wordle Solver
+# Part 4: For fun: Find the best wordle opener
+
+
 # ---------------------------------- START PART 1 ---------------------------------- #
 def only_length_5(wordlist): 
     # PART 1: GENERATE WORD BANK
@@ -22,31 +28,36 @@ def only_length_5(wordlist):
 # ----------------------------------- END PART 1 ----------------------------------- #
 
 def generate_new_wordlist():
-    with open("words.txt") as f:
+    with open("wordsmany.txt") as f:
         new_list = []
         for line in f:
-            new_list.append(line[:-1])
+            if "-" not in line and "'" not in line and "#" not in line:
+                new_list.append(line[:-1].lower())
     return new_list 
 
 def generate_final_wordlist():
-    with open("finalwords.txt", "w+") as f:
+    with open("finalwordsmany.txt", "w+") as f:
         words = only_length_5(generate_new_wordlist())
         for word in words:
             f.write(word + "\n")
 
-def read_wordlist():
-    with open("finalwords.txt", "r") as f:
+def read_wordlist(long = False):
+    if long:
+        file = "finalwords.txt"
+    else:
+        file = "finalwordsmany.txt"
+    with open(file, "r") as f:
         words = [] 
         for line in f:
             words.append(line[:-1])
     return words 
 
 class Wordle:
-    def __init__(self, babymode = False, letter_help = True):
+    def __init__(self, babymode = False, letter_help = True, long = False):
         self.done = False
         self.guess_strings = []
         self.guess_results = []
-        self.wordlist = read_wordlist()
+        self.wordlist = read_wordlist(long)
         self.word = random.choice(self.wordlist) 
         self.record = dict()
         for i in range(7):
@@ -151,11 +162,12 @@ class Wordle:
                 usr_inp = input("Please answer yes or no\n")
 
 class WordleSolver:
-    def __init__(self, guess_strings = [], guess_results = [], opener = None, solveriters = 100):
+    def __init__(self, guess_strings = [], guess_results = [], opener = None, solveriters = 100, long = False):
         self.guess_strings = guess_strings 
         self.guess_results = guess_results 
         self.solveriters = solveriters
         self.opener = opener
+        self.long = long
 
 # ---------------------------------- START PART 3 ---------------------------------- #
     def filter(self, result, string, wordlist):
@@ -189,8 +201,8 @@ class WordleSolver:
             words = self.filter(self.guess_results[i], self.guess_strings[i], words)
         return words 
 
-    def run_solver(self):
-        wordle = Wordle()
+    def run_solver(self, verbose = True):
+        wordle = Wordle(long = self.long)
         for _ in range(self.solveriters):
             wordlist = wordle.wordlist
             for i in range(6):
@@ -200,7 +212,8 @@ class WordleSolver:
                     guess = random.choice(wordlist)
                 wordle.guess_strings.append(guess)
                 wordle.guess_results.append(wordle.compare(guess))
-                wordle.print_state()
+                if verbose:
+                    wordle.print_state()
                 wordlist = self.filter(wordle.guess_results[i], wordle.guess_strings[i], wordlist)
                 if wordle.guess_results[i] == [2, 2, 2, 2, 2]:
                     wordle.record[i+1] += 1 
@@ -210,7 +223,11 @@ class WordleSolver:
             wordle.guess_strings = []
             wordle.guess_results = []
             wordle.word = random.choice(wordle.wordlist) 
-        for i in range(7):
-            print(str(i) + ": " + str(wordle.record[i]))
-        print(print("avg: " + str((wordle.record[1] + wordle.record[2]*2+wordle.record[3]*3+wordle.record[4]*4+wordle.record[5]*5+wordle.record[6]*6)/self.solveriters)))
-        return wordle.record
+        # for i in range(7):
+        #     print(str(i) + ": " + str(wordle.record[i]))
+        # print("avg: " + str((wordle.record[1] + wordle.record[2]*2+wordle.record[3]*3+wordle.record[4]*4+wordle.record[5]*5+wordle.record[6]*6)/self.solveriters))
+        return (wordle.record[1] + wordle.record[2]*2+wordle.record[3]*3+wordle.record[4]*4+wordle.record[5]*5+wordle.record[6]*6)/self.solveriters
+
+    def manual_solver(self):
+        # To be run alongside wordle. A cheat engine.
+        return
