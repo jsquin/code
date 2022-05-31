@@ -8,6 +8,12 @@
 import os 
 import random
 
+# Part 1: Generate word bank
+# Part 2: Wordle Game
+# Part 3: Wordle Solver
+# Part 4: For fun: Find the best wordle opener
+
+
 # ---------------------------------- START PART 1 ---------------------------------- #
 def only_length_5(wordlist): 
     # PART 1: GENERATE WORD BANK
@@ -15,18 +21,9 @@ def only_length_5(wordlist):
     # Return a subset of that list containing all the words that are length 5.
     # Also filter out words with special characters.
     "* YOUR CODE HERE *"
-    ALPHABET = "abcdefghijklmnopqrstuvwxyz"
-    new_words = [] 
-    for word in wordlist:
-        flag = True
-        if len(word) == 5:
-            for letter in word:
-                if letter.lower() not in ALPHABET:
-                    flag = False 
-            if flag:
-                new_words.append(word.lower())
-    return new_words
+
 # ----------------------------------- END PART 1 ----------------------------------- #
+
 
 def generate_new_wordlist(long = False):
     if long:
@@ -81,16 +78,16 @@ class Wordle:
         # This part is open ended. A guideline is provided but you may
         # choose to ignore it.
 
-        # return # To suppress errors. Remove this line
+        return # To suppress errors. Remove this line
         "* YOUR CODE HERE *"
-        response = [0] * 5 
-        for i in range(5):
-            if input[i] == self.word[i]: # Check if letter is correct
-                response[i] = 2 
+        response = ______
+        for i in ______ :
+            if input[i] == ______:
+                response[i] = ______
             else:
-                for j in range(5):
-                    if input[i] == self.word[j] and input[j] != self.word[j]: # Check if letter is in string and hasn't been marked correct.
-                        response[i] = 1
+                for j in ______:
+                    if input[i] == ______ and input[j] != ______: 
+                        response[i] = ______
                         break 
         return response
 # ----------------------------------- END PART 2 ----------------------------------- #
@@ -189,26 +186,25 @@ class WordleSolver:
         # This part is open ended. A guideline is provided, but you may choose 
         # to ignore it.
 
-        # return # To suppress errors. Remove this line
+        return # To suppress errors. Remove this line
+        "* YOUR CODE HERE *"
         letters_correct = []
-        for i in range(5):
+        for i in ______:
             if result[i] == 2:
-                letters_correct.append(string[i])
-            else:
-                letters_correct.append("")
+                letters_correct.append(______)
         def filter_word(word):
-            for i in range(5):
-                if result[i] == 0 and not word.count(string[i]) <= letters_correct.count(string[i]):
+            for i in ______:
+                if result[i] == ______ and not word.______ <= letters_correct.______:
                     return False 
-                elif result[i] == 1 and not (string[i] in word and word[i] != string[i]):
+                elif result[i] == ______ and not ______:
                     return False 
-                elif result[i] == 2 and not (string[i] == word[i]):
+                elif result[i] == ______ and not ______:
                     return False 
             return True 
         filtered_words = []
-        for word in wordlist:
-            if filter_word(word):
-                filtered_words.append(word)
+        for word in ______:
+            if filter_word(______):
+                filtered_words.append(______)
         return filtered_words
 # ----------------------------------- END PART 3 ----------------------------------- #
 
@@ -246,6 +242,7 @@ class WordleSolver:
         while not self.done:
             usr_inp = input("Please input your word choice\n")
             if usr_inp in ["q", "quit", "e", "exit"]:
+                os.system("clear")
                 self.done = True 
                 break 
             if len(usr_inp) != 5:
@@ -295,18 +292,3 @@ class WordleSolver:
                 else:
                     print("Possible Words: \n")
                     print(temp_wordlist)
-
-
-
-"""
-Problem: If a word contains "a"
-and you put "aaaa", all of them are marked yellow. Only one should be marked yellow??
-
-
-Also: For part 1, add filter for english basic letters only.
-
-also:: prob wantto use shorter word list
-
-best way to generate opener score is to run it against all possible words
-"""
-

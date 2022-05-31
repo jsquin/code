@@ -249,6 +249,62 @@ max(f(2, g(h(1, 5), 3)), 4)
 
 ## Spot the Bug
 
+What's wrong with this code?
+```python
+def add(num1, num2):
+    return sum 
+    sum = num1 + num2
+
+sum = add(2, 4)
+```
+
+
+<details><summary>Click for Solution</summary>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code>The code after the return statement will not execute. It should come before the return statement.</code>
+</pre></div></div>
+
+</details><br>
+
+
+What's wrong with this code 2?
+```python
+def add():
+    sum = num1 + num2
+    return sum
+
+sum = add(2, 4)
+```
+
+
+<details><summary>Click for Solution</summary>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code>The function body is referring to variables that don't exist in this frame. They should exist in the function parameters.</code>
+</pre></div></div>
+
+</details><br>
+
+
+What's wrong with this code 3?
+```python
+def add(num1, num2):
+    sum = num1 + num2
+
+sum = add(2, 4)
+```
+
+
+<details><summary>Click for Solution</summary>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code>The function body doesn't have a return statement, but the code that calls it tries to use the result of that expression. It needs a return statement that reutns the value of the sum.</code>
+</pre></div></div>
+
+</details><br>
+
+
 
 ## Name Lookup 
 

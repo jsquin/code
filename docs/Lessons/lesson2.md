@@ -361,3 +361,28 @@ while True:
 
 ## For Loops
 
+## Try it yourself!
+
+A **prime number** is an integer greater than 1 whose factors are only 1 and the number itself. (e.g.: 2, 3, 5, 7, ...)
+```python
+def is prime(n):
+    """Return True iff N is prime."""
+    return n > 1 and smallest_factor(n) == n
+
+def smallest_factor(n):
+    """Returns the smallest value k>1 that evenly divides N."""
+    "*YOUR CODE HERE*"
+
+def print factors(n):
+    """Print the prime factors of N."""
+    "*YOUR CODE HERE*"
+```
+
+
+Try implementing it here
+<iframe
+  src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1"
+  width="100%"
+  height="500px"
+>
+</iframe>
